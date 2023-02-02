@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color */
+.bg-primary {
+background: #0F172A;
+}
+.bg-secondary {
+  background: #1e293b;
+  }
+  .bg-accent {
+    background: #7477ff;
+    }
+    .text-accent {
+      color: #7477ff;
+      }
+nav li a {
+  @apply p-4 py-5 text-lg;
+}
+
+nav li a:hover {
+  color: #7477ff;
+}
+
+.mobile-nav {
+  @apply block md:hidden fixed top-20 py-2 w-full h-full bg-gray-900 duration-500
+}
+
+/* hero */
+h1 {
+  font-family: 'Itim', cursive;
+  line-height: 1.2 !important;
+  font-size: 50px;
+}
