@@ -1,21 +1,34 @@
 import React from "react"
 import HeroImg from "../assets/HeroImg.jpg"
 
+import {
+  AiOutlineGithub
+} from "react-icons/ai";
 
 const Hero = () => {
   return (
     <section className="bg-primary text-white py-32">
-        <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
+        <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         
-        <div className="hero-info">
-            <h1 className="text-2x1 lg:text-6x1">
+        <div className="hero-info pb-5 md:pb-0">
+            <h1 className="text-4x1 lg:text-6x1">
                 Hi, <br />
-                I am <span className='text-accent'>C</span>hris <br />
-                Web developer
+                I'm <span className='text-accent'>C</span>hris, <br />
+                Full Stack Developer
             </h1>
             <p className="py-5">I am porficient in React.js and Tailwind CSS</p>
-
-            <button className="  btn  bg-accent border-2  border-[#7477ff] text-white px-6 py-4 hover:bg-transparent ">See Projects</button>
+        <div className="flex py-5 ">
+            <a
+              href="https://github.com/TikoMyster"
+              className="pr-4 inline-block text-accent hover:text-white"
+            >
+              {" "}
+              <AiOutlineGithub size={40} />{" "}
+            </a>
+            
+            
+          </div>
+            
         </div>
 
         <div className='hero-img'>
