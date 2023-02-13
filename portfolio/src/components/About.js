@@ -11,13 +11,13 @@ const About = () => {
                     About Me                  
                 </h2>
                 <p className="pb-5">
-                    My name is Christopher Saechao. 
+                    My name is Christopher Saechao. I am a Full Stack Developer, I have experience with Javascript, CSS, SQL and very proficient in learning new languages. 
                 </p>
                 <p className="pb-5">
-                    My name is Christopher Saechao. 
+                    I enjoy learning and currently have a video game project in development. No updates on it yet but once a demo can provided, it will be previewed on youtube and in this portfolio. 
                 </p>
                 <p className="pb-5">
-                    My name is Christopher Saechao. 
+                    I am married and currently have 4 dogs: Shiba Inu (katsu), Husky (silas), German Shepherd (kato), Pembroke Welsh Corgi (Remington, remy for short). 
                 </p>
     
                 
