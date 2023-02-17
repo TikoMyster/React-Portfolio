@@ -5,7 +5,7 @@
 A simple Portfolio built with React.
 
 ## Preview
-![Preview](![Alt text](src/assets/Screenshot_preview.png)
+![Preview](![Alt text](src/assets/Screenshot_preview.png))
 
 ## How to use
 1. Clone/Download the repo.

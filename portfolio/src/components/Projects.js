@@ -38,6 +38,7 @@ const Projects = () => {
                         </a>
                 </div>
         </div>
+        
         </section>
       )
 }
