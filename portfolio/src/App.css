@@ -1,245 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html {
-  scroll-behavior: smooth;
-}
-
-.projects img {
-  width: 100%;
-}
-
-
-/* color */
-.bg-primary {
-background: #0F172A;
-}
-.bg-secondary {
-  background: #1e293b;
-  }
-  .bg-accent {
-    background: #7477ff;
-    }
-    .text-accent {
-      color: #7477ff;
-      }
-nav li a {
-  @apply p-4 py-5 text-lg;
-}
-
-nav li a:hover {
-  color: #7477ff;
-}
-
-.mobile-nav {
-  @apply block md:hidden fixed top-20 py-2 w-full h-full bg-gray-900 duration-500
-}
-
-/* hero */
-h1 {
-  font-family: 'Itim', cursive;
-  line-height: 1.2 !important;
-  font-size: 50px;
-}
-
-:root {
-  --color-calendar-graph-day-bg: #dbdbdd;
-  --color-calendar-graph-day-L1-bg: #39dd34;
-  --color-calendar-graph-day-L2-bg: #45a045;
-  --color-calendar-graph-day-L3-bg: #047526;
-  --color-calendar-graph-day-L4-bg: #0a4208;
-}
-
-rect.ContributionCalendar-day[data-level='0'] {
-    fill: var(--color-calendar-graph-day-bg);
-}
-
-rect.ContributionCalendar-day[data-level='1'] {
-    fill: var(--color-calendar-graph-day-L1-bg);
-}
-
-rect.ContributionCalendar-day[data-level='2'] {
-    fill: var(--color-calendar-graph-day-L2-bg);
-}
-
-rect.ContributionCalendar-day[data-level='3'] {
-    fill: var(--color-calendar-graph-day-L3-bg);
-}
-
-rect.ContributionCalendar-day[data-level='4'] {
-    fill: var(--color-calendar-graph-day-L4-bg);
-}
-
-.calendar .width-full > .float-left {
-    display: none;
-}
-
-.calendar {
-    width: 750px;
-    font-family: Helvetica, arial;
-    border: 1px solid #ffffff;
-    border-radius: 3px;
-    min-height: 243px;
-    text-align: center;
-    margin: 0 auto;
-    background-color: #8f8f8f;
-}
-
-.calendar-graph text.wday,
-.calendar-graph text.month {
-    font-size: 10px;
-    fill: #2a56cf;
-    
-}
-
-.contrib-legend {
-    text-align: right;
-    padding: 0 14px 10px 0;
-    display: inline-block;
-    float: right;
-    background-color: #1e293b;
-}
-
-.contrib-legend .legend {
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px;
-    position: relative;
-    bottom: -1px;
-    padding: 0;
-}
-
-.contrib-legend .legend li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-}
-
-.text-small {
-    font-size: 12px;
-    color: #ffffff;
-}
-
-.calendar-graph {
-    padding: 5px 0 0;
-    height: 126px;
-    text-align: center;
-}
-
-.contrib-column {
-    padding: 15px 0;
-    text-align: center;
-    border-left: 1px solid #dddddd;
-    border-top: 1px solid #ddd;
-    font-size: 11px;
-    background-color: #1e293b;
-}
-
-.contrib-column-first {
-    border-left: 0;
-}
-
-.table-column {
-    display: table-cell;
-    width: 1%;
-    padding-right: 10px;
-    padding-left: 10px;
-    vertical-align: top;
-}
-
-.contrib-number {
-    font-weight: 300;
-    line-height: 1.3em;
-    font-size: 24px;
-    display: block;
-    color: #2979c5;
-}
-
-.calendar img.spinner {
-    width: 70px;
-    margin-top: 50px;
-    min-height: 70px;
-}
-
-.monospace {
-    text-align: center;
-    color: #e40f0f;
-    font-family: monospace;
-}
-
-.monospace a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.contrib-footer {
-    font-size: 11px;
-    padding: 0 10px 12px;
-    text-align: left;
+swiper {
     width: 100%;
-    box-sizing: border-box;
-    height: 26px;
-}
-
-.left.text-muted {
-    float: left;
-    margin-left: 9px;
-    color: #ffffff;
-}
-.left.text-muted a {
-    color: #ffffff;
-    text-decoration: none;
-}
-.left.text-muted a:hover,
-.monospace a:hover {
-    text-decoration: underline;
-}
-
-h2.f4.text-normal.mb-3 {
-    display: none;
-}
-
-.float-left.text-gray {
-    float: left;
-}
-#user-activity-overview{
-    display:none;
-}
-
-.day-tooltip {
-    white-space: nowrap;
-    position: absolute;
-    z-index: 99999;
-    padding: 10px;
-    font-size: 12px;
-    color: #1766b6;
+    height: 100%;
+  }
+  
+  .swiper-slide {
     text-align: center;
-    background: rgba(67, 79, 192, 0.85);
-    border-radius: 3px;
-    display: none;
-    pointer-events: none;
-}
-.day-tooltip strong {
-    color: #2e76be;
-}
-.day-tooltip.is-visible {
+    font-size: 18px;
+    background: black;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
     display: block;
-}
-.day-tooltip:after {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-box:hover .p{
+    top: 0;
+  }
+
+  .p{
+    transition: 0.5s all;
+  }
+
+
+  .banner-astronout {
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    box-sizing: border-box;
-    margin: 0 0 0 -5px;
-    content: " ";
-    border: 5px solid transparent;
-    border-top-color: rgba(19, 115, 224, 0.85)
+    animation: astronout 2s infinite alternate linear;
+    -webkit-animation: astronout  4s infinite alternate linear;
+    width: 400px;
 }
 
-text.ContributionCalendar-label {
-    fill: #1250d6;
-    font-size: 11px;
+.banner-astronout1 {
+  position: absolute;
+  animation: astronout1 2s infinite alternate linear;
+  -webkit-animation: astronout1  4s infinite alternate linear;
+  width: 400px;
+}
+
+@keyframes astronout1 {
+  0% {
+    left: 70%;
+    top: 25%;
+  }
+
+  100% {
+    left: 60%;
+    top: 35%;
+  }
+}
+
+
+@keyframes astronout {
+  0% {
+    left: 50%;
+    top: 45%;
+  }
+
+  100% {
+    left: 40%;
+    top: 35%;
+  }
+}
+
+.bla{
+  transition: transform ease .4s;
+  padding: 0 10px;
+}
+.bla:hover{
+  transform: scale(1.3);
 }

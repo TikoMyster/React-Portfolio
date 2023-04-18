@@ -1,45 +1,38 @@
-import React, {useState} from 'react'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import React from 'react'
+import logo from "../assets/Header-Twitter.png"
+import logo1 from "../assets/Header-Twitter.png"
+import bg from "../assets/Silas, Kato, Remy.jpg"
+import Navbar from './Navbar'
+import "../App.css"
 
-const Header = () => {
-    const [toggle, setToggle] = useState(false);
 
-    const handleToggle = ( ) => setToggle(!toggle);
-    
+
+function Header() {
   return (
-    <header className='flex justify-between px-5 py-2 bg-primary text-white '>
-        <a href="/" className="logo-text-2x1 font-bold text-accent">Christopher Saechao Portfolio</a>
-
-        {/* Desktop Nav*/}
-        <nav className="hidden md:block">
-          <ul className='flex'>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#projects">Projects</a></li>
-            <li><a href="/#SocialMedia">Social Media</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            <li><a href="/#resume">Resume</a></li>
-          </ul>
-        </nav>
-        {/* Mobile Nav*/}
-        <nav className={ !toggle 
-        ? "mobile-nav left-[-100%] " 
-        : "mobile-nav left-0"}
-        >
-          <ul className="flex flex-col">
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#projects">Projects</a></li>
-            <li><a href="/#SocialMedia">Social Media</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            <li><a href="/#resume">Resume</a></li>
-          </ul>
-        </nav>
-
-        {/* Toggle Button */}
-        <button onClick={handleToggle} className="block md:hidden">
-          {!toggle ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
-
-        </button>
-        </header>
+   <>
+   <div id='home' style={{backgroundImage: `url(${bg})`}} className=' bg-center bg-cover bg-no-repeat h-screen flex flex-col '>
+    <Navbar/>
+    <div className="wrapper flex justify-between items-center h-screen w-full px-20 lg:justify-center lg:px-6">
+      <div className="content lg:text-center">
+        <div className="btn py-3">
+          <button  className=' border-2 border-[#b0aaaa] font-bold text-white bg-[linear-gradient(90deg,#b004b0,#38097a)] p-4 rounded-2xl'>Welcome to my Portfolio</button>
+        </div>
+        <h1 className='text-white text-5xl font-bold'>Hello! I'm Chris</h1>
+        <p className='text-white py-4 max-w-lg '></p>
+        <button className='  text-white text-2xl' link="Socialmedia">Let's Connect <i className="fa-solid fa-arrow-right text-lg  p-[2px] "></i> </button>
+      </div>
+      <div className="image banner-astronout lg:hidden absolute w-[300px] flex ">
+      <img className='w-96 ast-img' src={logo1} alt="" />
+    
+      </div>
+      <div className="image banner-astronout1 lg:hidden absolute w-[300px] flex ">
+     
+      <img className='w-96 ast-img' src={logo} alt="" />
+      </div>
+   
+    </div>
+   </div>
+   </>
   )
 }
 
